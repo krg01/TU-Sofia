@@ -3,10 +3,6 @@ package com.config.controller;
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
-import java.nio.file.StandardCopyOption;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Set;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -17,19 +13,12 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.multipart.MultipartFile;
 
 import com.config.dao.ChannelDAO;
-import com.config.dao.PlayListDAO;
 import com.config.dao.UserDAO;
-import com.config.dao.VideoDAO;
-import com.config.exception.CreateUserException;
 
-import com.config.model.Playlist;
 import com.config.model.User;
-import com.config.model.Video;
 
 @Controller
 public class UsersController {
