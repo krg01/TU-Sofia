@@ -16,9 +16,9 @@ import java.util.HashMap;
 import java.util.List;
 
 import com.config.model.Comment;
-import com.config.model.LocalDateTimeConverter;
 import com.config.model.User;
 import com.config.model.Video;
+import com.config.util.LocalDateTimeConverter;
 
 public class CommentDAO {
 

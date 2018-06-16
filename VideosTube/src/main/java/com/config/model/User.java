@@ -13,6 +13,7 @@ import java.util.regex.Pattern;
 import com.config.dao.CommentDAO;
 import com.config.dao.PlayListDAO;
 import com.config.exception.CreateUserException;
+import com.config.util.CryptWithMD5;
 
 public class User {
 	public static final String DEFAULT_PROFILE_PICTURE = "defaulfProfilePic.png";

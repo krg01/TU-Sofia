@@ -1,4 +1,4 @@
-package com.config.model;
+package com.config.util;
 
 import java.sql.Connection;
 import java.sql.Timestamp;
