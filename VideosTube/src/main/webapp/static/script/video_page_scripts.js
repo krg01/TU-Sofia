@@ -46,7 +46,6 @@ function showAbonatedChannals() {
 	});
 }
 function showMyPlaylists() {
-	alert("sadasda")
 	$.get("myPlaylists", {}, function(result) {
 		document.getElementById("searchResults").innerHTML = result;
 		document.getElementById('newVideo').style.display = "none";

@@ -50,7 +50,7 @@ public class UsersController {
 			System.out.println("NO PIC");
 			return;
 		}
-		File file = new File("profilePic/" + userPic);
+		File file = new File("C:/DEV/profilePic/" + userPic);
 
 		try {
 			Files.copy(file.toPath(), resp.getOutputStream());
@@ -58,13 +58,4 @@ public class UsersController {
 			System.out.println(e.getMessage());
 		}
 	}
-
-	
-	
-	
-	
-	
-	
-	
-
 }

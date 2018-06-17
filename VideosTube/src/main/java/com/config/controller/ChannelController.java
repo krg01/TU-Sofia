@@ -144,7 +144,7 @@ public class ChannelController {
 		
 		UserDAO.getInstance().changeProfilePicture(fileName, user.getUsername());
 
-		File dir = new File("profilePic");
+		File dir = new File("C:/DEV/profilePic");
 		File file = new File(dir, fileName);
 
 		Files.copy(multiPartFile.getInputStream(), file.toPath(), StandardCopyOption.REPLACE_EXISTING);

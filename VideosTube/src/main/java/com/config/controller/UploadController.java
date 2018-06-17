@@ -30,8 +30,8 @@ import com.config.model.User;
 @SessionAttributes("user")
 public class UploadController {
 
-	private static final String POSTERS_LOCATION = "posters";
-	private static final String VIDEOS_LOCATION = "videos";
+	private static final String POSTERS_LOCATION = "C:\\DEV\\posters";
+	private static final String VIDEOS_LOCATION = "C:\\DEV\\videos";
 
 	@RequestMapping(value = "/upload", method = RequestMethod.GET)
 	public String prepareForUpload() {
@@ -113,7 +113,7 @@ public class UploadController {
 
 		double msec = 5000;
 
-		BufferedImage frame = getFrame(videoFile, msec / 1000);
+		BufferedImage frame = getFrame(videoFile, 10);
 		ImageIO.write(frame, "jpg", new File(posterDir, poster));
 	}
 
